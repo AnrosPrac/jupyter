@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the specific libraries Lum needs
-RUN pip install --no-cache-dir httpx websockets aioconsole
+RUN pip install --no-cache-dir httpx websockets aioconsole watchdog
 
 # Ensure bash is the default shell
 RUN chsh -s /bin/bash jovyan
